@@ -1,0 +1,95 @@
+.test_container {
+    padding: 64px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.testimonial {
+    /* display: flex;
+    justify-content: center; */
+}    
+.test_title {
+    font-family: Aboreto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: #0B0803;
+    margin-bottom: 24px;
+    text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+    .test_title {
+        font-size: 48px;
+        width: 416px
+    }
+}
+.testimon_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    /* padding: 32px; */
+}
+@media only screen and (min-width: 768px) {
+    .testimon_wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.observation {
+    background: #C29D84;
+    padding: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+@media only screen and (min-width: 768px) {
+    .observation {
+        width: calc((100% - 28px) / 2);
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .observation {
+        width: calc((100% - 80px) / 4);
+    }
+}
+.test_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    color: #0B0803;
+    padding: 0 32px;
+    margin-bottom: 37px;
+}
+.sign_text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    margin-top: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.star-wrapper {
+    display: flex;
+    gap: 4px;
+    padding-left: 32px;
+    margin-bottom: 24px;
+}
+.filled_star_icon {
+    fill: #0B0803;
+}
+.outline_star_icon {
+    fill: none;
+    stroke: #0B0803;
+    stroke-width: 1.5;
+}
