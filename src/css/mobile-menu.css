@@ -44,12 +44,12 @@
     justify-content: center;
     align-items: center;
 
-    transition: color 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
 
 .mobile-menu-close:hover,
 .mobile-menu-close:focus {
-    color: white;
+    opacity: 0.5;
 }
 
 .icon-vector-mobile-menu {
