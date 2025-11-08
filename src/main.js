@@ -38,19 +38,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // при загрузке
 
-function showOnScroll(selector) {
-  document.querySelectorAll(selector).forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.classList.add('visible');
-    }
-  });
-}
+document.addEventListener('DOMContentLoaded', function () {
+  function showOnScroll(selector) {
+    document.querySelectorAll(selector).forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add('visible');
+      }
+    });
+  }
 
-window.addEventListener('scroll', () => {
-  showOnScroll('.hero-title, .hero-text, .hero-button');
-});
-window.addEventListener('load', () => {
+  window.addEventListener('scroll', function () {
+    showOnScroll('.hero-title, .hero-text, .hero-button');
+  });
+
+  // Первый вызов сразу после загрузки DOM
   showOnScroll('.hero-title, .hero-text, .hero-button');
 });
 
