@@ -1,0 +1,67 @@
+<section id="welcome" class="container welcome-section">
+  <div class="welcome-content">
+    <div class="welcome-text">
+      <p class="welcome-label">Welcome</p>
+      <h2 id="welcome-title" class="welcome-heading">
+        OUR JOURNEY: PASSION FOR QUALITY COFFEE
+      </h2>
+    </div>
+    <div class="welcome-tablet">
+      <p class="welcome-description">
+        At CoffeeJoy, we believe that every cup tells a story. Our mission is to
+        bring you the finest coffee experiences, crafted with care and
+        dedication. We are committed to sourcing high-quality beans and roasting
+        them to perfection, ensuring each sip is a delight.
+      </p>
+      <button
+        class="welcome-btn button"
+        type="button"
+        aria-label="Find coffee shop location"
+      >
+        <span class="span-button"> Find location</span>
+        <svg
+          class="welcome-icon"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <use href="/public/icons.svg#icon-map-pin"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <picture>
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        /img/welcome/img_02.jpg    1x,
+        /img/welcome/img_02@2x.jpg 2x,
+        /img/welcome/img_02@3x.jpg 3x
+      "
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        /img/welcome/img_02.jpg    1x,
+        /img/welcome/img_02@2x.jpg 2x,
+        /img/welcome/img_02@3x.jpg 3x
+      "
+    />
+    <source
+      media="(min-width: 1440px)"
+      srcset="
+        /img/welcome/img_02.jpg    1x,
+        /img/welcome/img_02@2x.jpg 2x,
+        /img/welcome/img_02@3x.jpg 3x
+      "
+    />
+    <img
+      class="welcome-image"
+      width="288"
+      src="/img/welcome/img_02.jpg"
+      alt="Barista pouring coffee in a cozy café"
+      loading="lazy"
+    />
+  </picture>
+</section>

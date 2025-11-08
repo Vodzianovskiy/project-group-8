@@ -4,7 +4,14 @@
 @import url('./container.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./quality.css');
-@import url('./footer.css');
+/* src/css/main.css */
+@import './header.css';
+@import './hero.css';
+@import './welcome.css';
+@import './quality.css';
+@import './experience.css';
+@import './subscribe.css';
+@import './testimonials.css';
+@import './location.css';
+@import './footer.css';
+@import './mobile-menu.css';
