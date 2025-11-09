@@ -8,6 +8,10 @@
   background-size: cover;
   background-position: center;
 }
+
+.hero-content {
+  width: 256px;
+}
 @media (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
