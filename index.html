@@ -6,20 +6,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <title>CoffeeJoy</title>
     <script type="module" crossorigin src="/project-group-8/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-group-8/assets/index-fNpWHiPE.css">
+    <link rel="stylesheet" crossorigin href="/project-group-8/assets/index-Dggan5qX.css">
   </head>
   <body>
     <header class="site-header">
@@ -110,7 +103,6 @@
       width="288"
       src="/project-group-8/assets/img_02-CIepFNva.jpg"
       alt="Barista pouring coffee in a cozy café"
-      loading="lazy"
     />
   </picture>
 </section>
@@ -660,23 +652,64 @@
   <nav class="mobile-menu-nav">
     <ul class="mobile-menu-list">
       <li class="mobile-menu-nav-item">
-        <a class="mobile-menu-link" href="#">About us</a>
+        <a class="mobile-menu-link" href="#welcome">About us</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a class="mobile-menu-link" href="#">Benefits</a>
+        <a class="mobile-menu-link" href="#quality">Benefits</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a class="mobile-menu-link" href="#">Gallery</a>
+        <a class="mobile-menu-link" href="#gallery">Gallery</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a class="mobile-menu-link" href="#">Testimonial</a>
+        <a class="mobile-menu-link" href="#testimonials">Testimonial</a>
       </li>
       <li class="mobile-menu-nav-item">
-        <a class="mobile-menu-link" href="#">Location</a>
+        <a class="mobile-menu-link" href="#location">Location</a>
       </li>
     </ul>
   </nav>
 </div>
+
+      <section class="section-success-subscription">
+  <div class="success-subscription">
+    <div class="container">
+      <div class="success-subscription-wrapper">
+        <button class="subscription-close" type="button" data-menu-close>
+          <svg class="icon-vector-mobile-menu" width="32" height="32">
+            <use href="icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="title-success-subscription">
+          Welcome to the world of CoffeeJoy!
+        </h2>
+        <p class="text-success-subscription">
+          Fresh brews, special offers, and cozy updates are coming your way.
+        </p>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-group-8/assets/mob-yN-wgrX4.jpg 1x, /project-group-8/assets/mob@2x-DLMrBMeY.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-group-8/assets/desk-sXPHhWjD.jpg 1x, /project-group-8/assets/desk@2x-ByN18ISM.jpg 2x"
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="/project-group-8/assets/desk-sXPHhWjD.jpg 1x, /project-group-8/assets/desk@2x-ByN18ISM.jpg 2x"
+        />
+        <img
+          class="success-subscription-img"
+          width="288"
+          src="/img/success_subscription/mob.jpg "
+          alt="CoffeeJoy"
+        />
+      </picture>
+      <button class="btn-success-subscription" type="button">Close</button>
+    </div>
+  </div>
+</section>
 
     </main>
 
