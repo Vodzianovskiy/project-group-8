@@ -6,10 +6,12 @@
   backface-visibility: hidden;
 }
 
-.observation:hover,
-.observation:focus {
-  transform: scale(1.03) translateY(-7px);
-  box-shadow: 0 14px 35px -8px var(--color-scheme-2-background, #6a5af9cc),
-    0 2px 4px var(--color-scheme-2-background, #0002);
-  z-index: 10;
+@media (min-width: 768px) {
+  .observation:hover,
+  .observation:focus {
+    transform: scale(1.03) translateY(-7px);
+    box-shadow: 0 14px 35px -8px var(--color-scheme-2-background, #6a5af9cc),
+      0 2px 4px var(--color-scheme-2-background, #0002);
+    z-index: 10;
+  }
 }

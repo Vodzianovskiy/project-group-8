@@ -3,8 +3,10 @@
   display: inline-block;
 }
 
-.icon-vector:hover,
-.icon-vector:focus {
-  transform: scale(1.55);
-  z-index: 3;
+@media (min-width: 768px) {
+  .icon-vector:hover,
+  .icon-vector:focus {
+    transform: scale(1.55);
+    z-index: 3;
+  }
 }
