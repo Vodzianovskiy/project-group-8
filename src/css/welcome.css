@@ -1,18 +1,18 @@
 .welcome-section {
   max-width: 375px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 64px 0px;
 }
 @media only screen and (min-width: 768px) {
   .welcome-section {
     max-width: 768px;
-    padding: 64px 32px;
+    padding: 64px 0px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .welcome-section {
     max-width: 1440px;
-    padding: 64px;
+    padding: 64px 0px;
   }
 }
 .welcome-content {
@@ -36,6 +36,10 @@
     text-align: left;
   }
 }
+
+.welcome-text {
+  margin-bottom: 32px;
+}
 .welcome-label {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
@@ -51,7 +55,6 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #0b0803;
-  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -106,7 +109,8 @@
   }
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   .span-button {
     color: var(--color-neutral-darkest);
   }

@@ -33,6 +33,11 @@ footer {
 .social-link-item {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.link:hover,
+.link:focus,
+.footer-logo:hover,
+.footer-logo:focus,
 .social-link-item:hover,
 .social-link-item:focus,
 .footer-menu-link:hover,
@@ -65,6 +70,14 @@ footer {
   margin-top: 32px;
 }
 
+.social-link-item .icon-vector {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 @media (min-width: 768px) {
   .footer-content {
     flex-direction: row;
@@ -81,8 +94,8 @@ footer {
     margin: 0;
   }
   .social-links .icon-vector {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
   .footer-menu-list {
     flex-direction: row;

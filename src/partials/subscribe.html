@@ -7,17 +7,29 @@
         today!
       </p>
     </div>
-    <div class="">
+    <div>
       <form class="input_form" name="subscribe_form" autocomplete="on">
-        <label class="input_label" for="input-email">
-          <input
-            class="input_item"
-            name="input-email"
-            type="email"
-            placeholder="Your Email Here"
-            required
-          />
+        <label
+          class="input_label"
+          for="input-email"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+          "
+        >
+          Your Email Here
         </label>
+        <input
+          id="input-email"
+          class="input_item"
+          name="input-email"
+          type="email"
+          placeholder="Your Email Here"
+          required
+        />
         <button class="input_button" type="submit">
           Subscribe
           <svg class="input_icon" width="24" height="24">
@@ -25,12 +37,14 @@
           </svg>
         </button>
       </form>
+
       <p class="subscribe_explanation">
         By clicking Get Started, you agree to our Terms and Conditions.
       </p>
     </div>
     <img
       class="img_width_height"
+      src="/img/subscribe/img_13.jpg"
       srcset="
         /img/subscribe/img_13.jpg    1x,
         /img/subscribe/img_13@2x.jpg 2x,

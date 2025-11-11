@@ -27,6 +27,8 @@
   line-height: 1.5;
   color: var(--color-scheme-1-text);
 }
+.logo:hover,
+.logo:focus,
 .menu-link:hover,
 .menu-link:focus {
   opacity: 0.4;

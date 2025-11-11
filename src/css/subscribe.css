@@ -101,7 +101,8 @@
     transform: translateX(10px);
   }
 }
-.input_button:hover {
+.input_button:hover,
+.input_button:focus {
   color: var(--color-neutral-darkest);
   .input_icon {
     fill: var(--color-neutral-darkest);

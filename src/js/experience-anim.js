@@ -1,5 +1,5 @@
 let currentObserver = null;
-let isDesktop = window.matchMedia('(min-width: 768px)').matches;
+let isTablet = window.matchMedia('(min-width: 768px)').matches;
 
 const destroyObserver = () => {
   if (currentObserver) {
@@ -9,36 +9,34 @@ const destroyObserver = () => {
 };
 
 const createObserver = () => {
-  const expSection = document.querySelector('.experience');
-  if (!expSection) return;
-
+  const section = document.querySelector('.experience');
+  if (!section) return;
   destroyObserver();
-
   currentObserver = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
-        const target = entry.target;
         if (entry.isIntersecting) {
-          target.classList.add('show');
+          entry.target.classList.add('show');
         } else {
-          target.classList.remove('show');
+          entry.target.classList.remove('show');
         }
       });
     },
     {
-      threshold: 0.23,
-      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.01,
+      rootMargin: '-5% 0px -5% 0px',
     }
   );
-
-  currentObserver.observe(expSection);
+  currentObserver.observe(section);
 };
 
 const initExperienceAnim = () => {
-  if (isDesktop) {
+  destroyObserver();
+  if (isTablet) {
     createObserver();
   } else {
-    destroyObserver();
+    const section = document.querySelector('.experience');
+    if (section) section.classList.remove('show');
   }
 };
 
@@ -46,19 +44,21 @@ const debounce = (func, wait) => {
   let timeout;
   return (...args) => {
     clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
+    timeout = setTimeout(() => {
+      requestAnimationFrame(() => func.apply(this, args));
+    }, wait);
   };
 };
 
 const handleResize = debounce(() => {
-  const newIsDesktop = window.matchMedia('(min-width: 768px)').matches;
-  if (newIsDesktop !== isDesktop) {
-    isDesktop = newIsDesktop;
+  const newIsTablet = window.matchMedia('(min-width: 768px)').matches;
+  if (newIsTablet !== isTablet) {
+    isTablet = newIsTablet;
     initExperienceAnim();
   }
 }, 150);
 
-window.addEventListener('resize', handleResize);
+window.addEventListener('resize', handleResize, { passive: true });
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initExperienceAnim);

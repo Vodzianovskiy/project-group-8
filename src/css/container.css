@@ -5,22 +5,18 @@
   width: 100%;
 }
 
-.site-header > .container {
-  padding: 18px 16px;
+.site-header {
+  padding: 18px 0px;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0px 32px;
   }
-  .site-header > .container {
-    padding: 18px 64px;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
     padding: 0 64px;
   }
 }
